@@ -2,7 +2,7 @@
 //
 // Created by: Daniel Pawelko
 // Created on: May 2021
-// This file contains GO program that returns what you should do
+// This file contains GO program that is a guessing game
 
 package main
 
@@ -12,17 +12,18 @@ import (
 	"time"
 )
 
-// This main function will calculate multuplication
+// This main function will be a better guessing game
 func main() {
 	// Defining variables
 	var guess int
 	rand.Seed(time.Now().UnixNano())
-	var random = rand.Intn(9)
+	var random int
+	random = rand.Intn(9)
 
 	fmt.Println("Better Guessing Game")
 	fmt.Println()
 
-	// Does calculations and outputs result
+	// Checks if guess == random
 	for guess != random {
 		// User Input
 		fmt.Print("Guess(0-9): ")
