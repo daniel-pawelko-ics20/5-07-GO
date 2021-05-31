@@ -17,8 +17,7 @@ func main() {
 	// Defining variables
 	var guess int
 	rand.Seed(time.Now().UnixNano())
-	var random int
-	random = rand.Intn(9)
+	var random = rand.Intn(9)
 
 	fmt.Println("Better Guessing Game")
 	fmt.Println()
